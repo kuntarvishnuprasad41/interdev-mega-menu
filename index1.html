@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mobile Menu with Nested Submenus</title>
+        <style>
+            /* RESET */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #000;
+                color: #fff;
+            }
+
+            .mobile-nav {
+                background-color: #111;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu-list {
+                list-style: none;
+            }
+
+            .menu-list>li {
+                padding: 15px 10px;
+                border-bottom: 1px solid #333;
+                cursor: pointer;
+            }
+
+            .submenu-list,
+            .sub-submenu {
+                list-style: none;
+                padding-left: 20px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                background-color: #222;
+            }
+
+            .menu-list>li.open>.submenu-list,
+            .submenu-list__item.open>.sub-submenu {
+                max-height: 500px;
+                /* Adjust if needed */
+            }
+
+            .submenu-list__item {
+                padding: 10px 0;
+                cursor: pointer;
+                border-bottom: 1px solid #333;
+            }
+
+            .submenu-list__item-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .sub-submenu li {
+                padding: 8px 0;
+                border-bottom: 1px dotted #444;
+            }
+
+            a {
+                color: #ccc;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="mobile-nav">
+            <ul class="menu-list">
+                <li class="menu-item has-submenu">
+                    <div class="menu-item-wrapper">
+                        <span>Company</span>
+                    </div>
+                    <ul class="submenu-list">
+                        <li class="submenu-list__item has-submenu">
+                            <div class="submenu-list__item-wrapper">
+                                <span>Golf</span>
+                            </div>
+                            <ul class="sub-submenu">
+                                <li><a href="#">Golf Submenu 1</a></li>
+                                <li><a href="#">Golf Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu-list__item has-submenu">
+                            <div class="submenu-list__item-wrapper">
+                                <span>Tennis</span>
+                            </div>
+                            <ul class="sub-submenu">
+                                <li><a href="#">Tennis Submenu 1</a></li>
+                                <li><a href="#">Tennis Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu-list__item has-submenu">
+                            <div class="submenu-list__item-wrapper">
+                                <span>Basketball</span>
+                            </div>
+                            <ul class="sub-submenu">
+                                <li><a href="#">Basketball Submenu 1</a></li>
+                                <li><a href="#">Basketball Submenu 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><span>What We Do</span></li>
+                <li class="menu-item"><span>Industries</span></li>
+            </ul>
+        </nav>
+
+        <script>
+            // Toggle primary submenus
+            document.querySelectorAll('.menu-item.has-submenu').forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    this.classList.toggle('open');
+
+                    // Optional: Close others
+                    document.querySelectorAll('.menu-item.has-submenu').forEach(el => {
+                        if (el !== this) el.classList.remove('open');
+                    });
+                });
+            });
+
+            // Toggle sub-submenus
+            document.querySelectorAll('.submenu-list__item.has-submenu').forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    this.classList.toggle('open');
+
+                    // Optional: Close others
+                    document.querySelectorAll('.submenu-list__item.has-submenu').forEach(el => {
+                        if (el !== this) el.classList.remove('open');
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>

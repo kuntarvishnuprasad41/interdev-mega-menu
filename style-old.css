@@ -37,7 +37,7 @@ img {
   padding: 0 20px 0 40px;
   /* border-radius: 60px; */
   min-height: 82px;
-  background-color: rgba(25, 27, 36, 1);
+  background-color: #000;
 }
 
 .header__logo {
@@ -90,7 +90,7 @@ img {
   left: 0;
   /* border-radius: 33px; */
   padding: 30px 30px 50px 30px;
-  background-color: rgba(25, 27, 36, 1);
+  background-color: #000;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -129,8 +129,8 @@ img {
 .submenu-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 295px;
+  gap: 0px;
+  max-width: 240px;
   padding-left: 0;
 }
 
@@ -139,16 +139,22 @@ img {
   padding-right: 100px;
   margin-right: -100px;
   cursor: pointer;
+  background-color: black;
 }
 
 .submenu-list__item-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 6px 16px 6px 6px;
-  gap: 16px;
-  border-radius: 14px;
+  padding: 6px 26px 0px 0px;
+  /* gap: 16px; */
+  /* border-radius: 14px; */
   transition: var(--transition);
+  border: #fff;
+  border-width: 0 0px 0.5px 0;
+  border-style: solid;
+
+  max-width: 80%;
 }
 
 .submenu-list__item-wrapper > svg {
@@ -164,7 +170,7 @@ img {
 
 .submenu-content {
   position: absolute;
-  right: 0;
+  /* right: 00px; */
   top: 0;
   max-width: calc(100% - 365px);
   opacity: 0;
@@ -237,15 +243,15 @@ img {
 
 .submenu-content__list-item {
   display: block;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
+  /* border-radius: 20px; */
+  /* background-color: rgba(255, 255, 255, 0.05); */
   cursor: auto;
 }
 
 .submenu-content__link {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 10px 10px 20px;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -253,7 +259,7 @@ img {
 
 .submenu-content__link-img {
   margin-bottom: 20px;
-  border-radius: 13px;
+  /* border-radius: 13px; */
   overflow: hidden;
   transition: var(--transition);
 }
@@ -468,7 +474,7 @@ img {
     top: 100%;
     left: 0;
     padding: 20px;
-    background-color: rgba(25, 27, 36, 1);
+    background-color: black;
     /* border-radius: 20px; */
     opacity: 0;
     visibility: hidden;
@@ -527,6 +533,7 @@ img {
     width: 100%;
     max-width: 100%;
     gap: 5px;
+    /* padding: 0px 20px; */
   }
 
   .submenu-list__wrapper {
