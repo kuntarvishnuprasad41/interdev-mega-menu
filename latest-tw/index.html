@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interdev - Technology Solutions</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="/" class="logo">interdev</a>
+
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item has-dropdown">
+                                <a href="#" class="nav-link">Company <span class="dropdown-icon">▼</span></a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Leadership</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item has-dropdown">
+                                <a href="#" class="nav-link">What we do <span class="dropdown-icon">▼</span></a>
+                            </li>
+                            <li class="nav-item has-dropdown">
+                                <a href="#" class="nav-link">Industries <span class="dropdown-icon">▼</span></a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#">Healthcare</a></li>
+                                            <li><a href="#">Finance</a></li>
+                                            <li><a href="#">Manufacturing</a></li>
+                                            <li><a href="#">Retail</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Insights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Customer support</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="/contact" class="contact-btn">Contact us</a>
+
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Full-width mega dropdown outside the header container -->
+        <div id="mega-dropdown" class="mega-dropdown">
+            <div class="mega-dropdown-bg">
+                <div class="container">
+                    <div class="mega-dropdown-content">
+                        <div class="mega-dropdown-column sidebar">
+                            <ul class="mega-dropdown-list">
+                                <li class="menu-category active" data-category="it-infrastructure">
+                                    <a href="#" class="submenu-trigger">IT Infrastructure <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                                <li class="menu-category" data-category="security-surveillance">
+                                    <a href="#" class="submenu-trigger">Security & surveillance <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                                <li class="menu-category" data-category="cybersecurity">
+                                    <a href="#" class="submenu-trigger">Cybersecurity solutions <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                                <li class="menu-category" data-category="cloud">
+                                    <a href="#" class="submenu-trigger">Cloud solutions <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                                <li class="menu-category" data-category="ai">
+                                    <a href="#" class="submenu-trigger">Artificial intelligence <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                                <li class="menu-category" data-category="digital">
+                                    <a href="#" class="submenu-trigger">Digital transformation <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                                <li class="menu-category" data-category="services">
+                                    <a href="#" class="submenu-trigger">Services <span
+                                            class="chevron-right">›</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Dynamic content area that changes based on hover -->
+                        <div class="mega-dropdown-dynamic-content">
+                            <!-- Default content (IT Infrastructure) -->
+                            <div class="category-content active" id="it-infrastructure-content">
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Data management</a></li>
+                                        <li><a href="#">Data science</a></li>
+                                        <li><a href="#">Business intelligence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Artificial intelligence</a></li>
+                                        <li><a href="#">Generative AI</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <div class="service-description">
+                                        <h3>IT Infrastructure</h3>
+                                        <p>Build a robust foundation for your digital transformation with our
+                                            comprehensive IT infrastructure solutions. Our expert team designs,
+                                            implements, and manages scalable infrastructure that supports your business
+                                            goals while ensuring security, reliability, and performance.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Security & Surveillance content -->
+                            <div class="category-content" id="security-surveillance-content">
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">DS</a></li>
+                                        <li><a href="#">CS</a></li>
+                                        <li><a href="#">SC</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Access Control</a></li>
+                                        <li><a href="#">Video Analytics</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <div class="service-description">
+                                        <h3>Security & Surveillance</h3>
+                                        <p>Protect your assets and ensure peace of mind with our advanced security and
+                                            surveillance solutions. From state-of-the-art camera systems to intelligent
+                                            monitoring software, we provide comprehensive protection tailored to your
+                                            specific security requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cybersecurity content -->
+                            <div class="category-content" id="cybersecurity-content">
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Threat Detection</a></li>
+                                        <li><a href="#">Network Security</a></li>
+                                        <li><a href="#">Data Protection</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Penetration Testing</a></li>
+                                        <li><a href="#">Security Audits</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <div class="service-description">
+                                        <h3>Cybersecurity Solutions</h3>
+                                        <p>Defend your digital assets against evolving cyber threats with our
+                                            comprehensive cybersecurity solutions. Our expert team implements robust
+                                            security measures to protect your sensitive data, prevent breaches, and
+                                            ensure business continuity in an increasingly complex threat landscape.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Digital Transformation content -->
+                            <div class="category-content" id="digital-content">
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Process Automation</a></li>
+                                        <li><a href="#">Digital Workflows</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <ul class="mega-dropdown-list">
+                                        <li><a href="#">Customer Experience</a></li>
+                                        <li><a href="#">Digital Strategy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column">
+                                    <div class="service-description">
+                                        <h3>Digital transformation</h3>
+                                        <p>Empower your business with tailored digital transformation solutions designed
+                                            for your industry. From education to logistics, our cutting-edge software
+                                            enhances productivity, streamlines operations, and fosters seamless
+                                            collaboration. Transform the way you work with industry specific solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Structure -->
+        <div class="mobile-menu">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Company <span class="mobile-dropdown-icon">›</span></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item active">
+                    <a href="#" class="mobile-menu-link">What we do <span class="mobile-dropdown-icon">›</span></a>
+                    <ul class="mobile-submenu active">
+                        <li class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">IT infrastructure <span
+                                    class="mobile-dropdown-icon">›</span></a>
+                            <ul class="mobile-subsubmenu">
+                                <li><a href="#">Data management</a></li>
+                                <li><a href="#">Data science</a></li>
+                                <li><a href="#">Business intelligence</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">Security & surveillance <span
+                                    class="mobile-dropdown-icon">›</span></a>
+                            <ul class="mobile-subsubmenu">
+                                <li><a href="#">DS</a></li>
+                                <li><a href="#">CS</a></li>
+                                <li><a href="#">SC</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">Cybersecurity solutions <span
+                                    class="mobile-dropdown-icon">›</span></a>
+                            <ul class="mobile-subsubmenu">
+                                <li><a href="#">Threat Detection</a></li>
+                                <li><a href="#">Network Security</a></li>
+                                <li><a href="#">Data Protection</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">Cloud solutions <span
+                                    class="mobile-dropdown-icon">›</span></a>
+                            <ul class="mobile-subsubmenu">
+                                <li><a href="#">Cloud Storage</a></li>
+                                <li><a href="#">Cloud Computing</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-submenu-item active">
+                            <a href="#" class="mobile-submenu-link">Artificial intelligence <span
+                                    class="mobile-dropdown-icon down">v</span></a>
+                            <ul class="mobile-subsubmenu active">
+                                <li><a href="#">Data management</a></li>
+                                <li><a href="#">Data science</a></li>
+                                <li><a href="#">Business intelligence</a></li>
+                                <li><a href="#">Artificial intelligence</a></li>
+                                <li><a href="#">Generative AI</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">Digital transformation <span
+                                    class="mobile-dropdown-icon">›</span></a>
+                            <ul class="mobile-subsubmenu">
+                                <li><a href="#">Process Automation</a></li>
+                                <li><a href="#">Digital Workflows</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">Services <span
+                                    class="mobile-dropdown-icon">›</span></a>
+                            <ul class="mobile-subsubmenu">
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Implementation</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Industries <span class="mobile-dropdown-icon">›</span></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Finance</a></li>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Retail</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Insights</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Customer support</a>
+                </li>
+            </ul>
+        </div>
+
+        <main class="main-content">
+            <div class="container">
+                <h1>Welcome to interdev</h1>
+                <p>Hover over "What we do" in the navigation to see the dropdown menu, then hover over different menu
+                    items to see the content change.</p>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
