@@ -153,6 +153,8 @@ img {
   border: #fff;
   border-width: 0 0px 0.5px 0;
   border-style: solid;
+
+  max-width: 80%;
 }
 
 .submenu-list__item-wrapper > svg {
