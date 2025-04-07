@@ -146,8 +146,8 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 6px 16px 6px 6px;
-  gap: 16px;
+  padding: 6px 26px 0px 0px;
+  /* gap: 16px; */
   /* border-radius: 14px; */
   transition: var(--transition);
   border: #fff;
@@ -472,7 +472,7 @@ img {
     top: 100%;
     left: 0;
     padding: 20px;
-    background-color: rgba(25, 27, 36, 1);
+    background-color: black;
     /* border-radius: 20px; */
     opacity: 0;
     visibility: hidden;
@@ -531,6 +531,7 @@ img {
     width: 100%;
     max-width: 100%;
     gap: 5px;
+    /* padding: 0px 20px; */
   }
 
   .submenu-list__wrapper {
