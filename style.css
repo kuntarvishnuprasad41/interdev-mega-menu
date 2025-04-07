@@ -168,7 +168,7 @@ img {
 
 .submenu-content {
   position: absolute;
-  right: 0;
+  right: 800px;
   top: 0;
   max-width: calc(100% - 365px);
   opacity: 0;
@@ -241,15 +241,15 @@ img {
 
 .submenu-content__list-item {
   display: block;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
+  /* border-radius: 20px; */
+  /* background-color: rgba(255, 255, 255, 0.05); */
   cursor: auto;
 }
 
 .submenu-content__link {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 10px 10px 20px;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -257,7 +257,7 @@ img {
 
 .submenu-content__link-img {
   margin-bottom: 20px;
-  border-radius: 13px;
+  /* border-radius: 13px; */
   overflow: hidden;
   transition: var(--transition);
 }
