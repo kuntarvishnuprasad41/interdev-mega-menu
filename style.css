@@ -37,7 +37,7 @@ img {
   padding: 0 20px 0 40px;
   /* border-radius: 60px; */
   min-height: 82px;
-  background-color: rgba(25, 27, 36, 1);
+  background-color: #000;
 }
 
 .header__logo {
@@ -90,7 +90,7 @@ img {
   left: 0;
   /* border-radius: 33px; */
   padding: 30px 30px 50px 30px;
-  background-color: rgba(25, 27, 36, 1);
+  background-color: #000;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -129,8 +129,8 @@ img {
 .submenu-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 295px;
+  gap: 0px;
+  max-width: 240px;
   padding-left: 0;
 }
 
@@ -139,6 +139,7 @@ img {
   padding-right: 100px;
   margin-right: -100px;
   cursor: pointer;
+  background-color: black;
 }
 
 .submenu-list__item-wrapper {
@@ -147,8 +148,11 @@ img {
   align-items: center;
   padding: 6px 16px 6px 6px;
   gap: 16px;
-  border-radius: 14px;
+  /* border-radius: 14px; */
   transition: var(--transition);
+  border: #fff;
+  border-width: 0 0px 0.5px 0;
+  border-style: solid;
 }
 
 .submenu-list__item-wrapper > svg {
