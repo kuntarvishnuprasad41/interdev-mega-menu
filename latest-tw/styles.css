@@ -43,10 +43,83 @@ ul {
   height: 64px;
 }
 
+/* Logo and animation styles */
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #e1c16e;
+  display: block;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.logo-favicon {
+  position: relative;
+  width: 50px;
+  height: auto;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 2;
+}
+
+.logo-main {
+  position: absolute;
+  left: 0;
+  height: 40px;
+  width: auto;
+  opacity: 0;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: opacity 0.8s ease 0.3s;
+  z-index: 1;
+}
+
+/* Logo animation on page load */
+.logo:hover .logo-favicon {
+  opacity: 0;
+  transform: translate3d(0px, 0px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.logo:hover .logo-main {
+  opacity: 1;
+}
+
+/* Add animation class that will be added on page load */
+.logo-animate .logo-favicon {
+  animation: fadeOutFavicon 1s forwards 1s;
+}
+
+.logo-animate .logo-main {
+  animation: fadeInLogo 1s forwards 1.5s;
+}
+
+@keyframes fadeOutFavicon {
+  0% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+}
+
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Main navigation */
@@ -406,8 +479,16 @@ ul {
     height: 56px;
   }
 
-  .logo {
-    font-size: 20px;
+  .logo-container {
+    height: 40px;
+  }
+
+  .logo-favicon {
+    width: 40px;
+  }
+
+  .logo-main {
+    height: 32px;
   }
 
   .mobile-menu {
